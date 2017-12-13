@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'c:\Users\robot-arm\Documents\pictureline_display\mainwindow.ui'
+# Form implementation generated from reading ui file 'C:\Users\robot-arm\Documents\pictureline_display\mainwindow.ui'
 #
 # Created by: PyQt4 UI code generator 4.11.4
 #
@@ -25,7 +25,7 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(651, 556)
+        MainWindow.resize(662, 642)
         self.centralWidget = QtGui.QWidget(MainWindow)
         self.centralWidget.setObjectName(_fromUtf8("centralWidget"))
         self.verticalLayout_5 = QtGui.QVBoxLayout(self.centralWidget)
@@ -116,23 +116,24 @@ class Ui_MainWindow(object):
         spacerItem5 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
         self.verticalLayout_4.addItem(spacerItem5)
         self.frame_2 = QtGui.QFrame(self.centralWidget)
-        self.frame_2.setMinimumSize(QtCore.QSize(0, 120))
+        self.frame_2.setMinimumSize(QtCore.QSize(0, 200))
         self.frame_2.setFrameShape(QtGui.QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QtGui.QFrame.Raised)
         self.frame_2.setObjectName(_fromUtf8("frame_2"))
         self.horizontalLayout_3 = QtGui.QHBoxLayout(self.frame_2)
-        self.horizontalLayout_3.setMargin(11)
-        self.horizontalLayout_3.setSpacing(6)
+        self.horizontalLayout_3.setMargin(0)
+        self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName(_fromUtf8("horizontalLayout_3"))
-        self.line_info_display = QtGui.QLabel(self.frame_2)
-        self.line_info_display.setText(_fromUtf8(""))
+        self.line_info_display = QtGui.QVBoxLayout()
+        self.line_info_display.setMargin(11)
+        self.line_info_display.setSpacing(6)
         self.line_info_display.setObjectName(_fromUtf8("line_info_display"))
-        self.horizontalLayout_3.addWidget(self.line_info_display)
+        self.horizontalLayout_3.addLayout(self.line_info_display)
         self.verticalLayout_4.addWidget(self.frame_2)
         self.verticalLayout_5.addLayout(self.verticalLayout_4)
         MainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtGui.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 651, 17))
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 662, 17))
         self.menuBar.setObjectName(_fromUtf8("menuBar"))
         MainWindow.setMenuBar(self.menuBar)
         self.mainToolBar = QtGui.QToolBar(MainWindow)
